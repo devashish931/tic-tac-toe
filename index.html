@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>tic tac toe</title>
+    <script src="js/jQuery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/game.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+</head>
+
+<body>
+    <div class="game-name">
+        <h2 class="name">Tic Tac Toe</h2>
+        <span class="x">X</span>
+        <span class="o">O</span>
+    </div>
+    <div class="clearfix"></div>
+    <div class="outer">
+        <div style="top: 0px;left:0px;" class="block" id='block'></div>
+        <div style="top: 0px;left:73px;" class="block" id='block'></div>
+        <div style="top: 0px;left:146px;" class="block" id='block'></div>
+        <div style="top: 72px;left:0px;" class="block" id='block'></div>
+        <div style="top: 72px;left:73px;" class="block" id='block'></div>
+        <div style="top: 72px;left:146px;" class="block" id='block'></div>
+        <div style="bottom:0px;left:0px;" class="block" id='block'></div>
+        <div style="bottom:0px;left:73px;" class="block" id='block'></div>
+        <div style="bottom:0px;left:146px;" class="block" id='block'></div>
+    </div>
+    <div class="scoreBoardContainer">
+        <table class="score-board">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="l">
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <button class="replay">Replay</button>
+    <div class="modal C">
+        <div class="wish"></div> <span class="close">X</span>
+        <div class="winner"></div>
+    </div>
+    <script src="js/win-check.js"></script>
+    <script src="js/modes.js"></script>
+    <script src="js/game-custom.js"></script>
+</body>
+
+</html>
